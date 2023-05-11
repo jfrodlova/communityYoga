@@ -67,15 +67,19 @@ header span {
 #community {
     display: grid;
     grid-column: 1 / span 3;
+    
 }
 
+#community p {
+    margin-bottom: 5%;
+}
 
 .item img {
     width: 350px;
     height: auto;
     display: flex;
     margin: 0.5rem;
-    
+    border-radius: 3%;
     
 }
 
@@ -125,10 +129,22 @@ header span {
     
 }
 
+
+
 /* media querries */
+
+  
+
 @media only screen and (max-width: 450px) {
     .button-primary {
         display: none;
         text-align: center;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    body {
+        margin-left: 7%;
+        margin-right: 7%;
+    
+    }
