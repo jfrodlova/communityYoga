@@ -1,0 +1,134 @@
+/*general*/
+
+body {
+   margin: 0; 
+   box-sizing: border-box;
+   font-family: Nunito;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 2rem;
+}
+h2, p {
+    text-align: center;
+}
+p {
+    font-size: larger;
+}
+/*grid and flex*/
+
+.grid {
+display: grid;
+grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+gap: 5px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+}
+
+/*header*/
+header {
+    
+    height: 50%;
+    width: 100%;
+    z-index: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/header-landscape.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    
+    color: seashell;
+}
+
+
+header span {
+    font-family: Ysabeau;
+    padding: 1.2rem;
+    font-size: 2rem;
+}
+
+.nav {
+    text-align: right;
+    flex-grow: 1;
+    align-items: center;
+    padding-right: 1rem;
+    
+}
+/*community section*/
+#community {
+    display: grid;
+    grid-column: 1 / span 3;
+}
+
+
+.item img {
+    width: 350px;
+    height: auto;
+    display: flex;
+    margin: 0.5rem;
+    
+    
+}
+
+/*location section*/
+
+#location {
+    display: grid;
+    grid-column: 1 / 2;
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+     url(/images/footer-background.jpg);*/
+     background-size: cover;
+     color: black;
+    padding: 10%;
+    align-self: self-start;
+    }
+
+
+    
+/*buttons*/
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 1rem;
+    margin: 0.5rem; 
+    cursor: pointer;
+    text-align: center;
+   
+}
+
+.button-primary {
+    background-color: black;
+    color: seashell;
+}
+
+.button:hover {
+    background-color: darkgoldenrod;
+    
+}
+
+.button-secondary {
+    background-color: antiquewhite;
+    color: rgb(73, 39, 39)
+    
+}
+
+/* media querries */
+@media only screen and (max-width: 450px) {
+    .button-primary {
+        display: none;
+        text-align: center;
+    }
+}
